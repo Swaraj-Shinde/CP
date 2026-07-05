@@ -26,32 +26,7 @@ int main()
         }
     }
 
-if(row==0 || row==4)
-{
- moves+=2;
-}
-else if(row==1 || row==3)
-{
-    moves+=1;
-}
-else
-{
-    moves+=0;
-}
-
-if(column==0 || column==4)
-{
- moves+=2;
-}
-else if(column==1 || column==3)
-{
-    moves+=1;
-}
-else
-{
-    moves+=0;
-}
-
+moves=abs(2-row)+abs(2-column); //distance formula
 cout<<moves;
-    return 0;
+return 0;
 }
