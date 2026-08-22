@@ -3,24 +3,20 @@ using namespace std;
 
 int main()
 {
-    long long n;
-    int i;
+    int n;
     cin>>n;
-    int arr[n];
-    long long target;
-    for(i=0;i<n;i++)
+    if(n==1)
     {
-        cin>>arr[i];
+        cout<<"-1";
     }
-    cin>>target;
-    for(i=0;i<n;i++)
+    else{
+    for(int i=1;i<=n;i++)
     {
-        if(arr[i]==target)
+        if(i%2==0)
         {
-            cout<<i;
-            return 0;
+            cout<<i<<endl;
         }
     }
-    cout<<"-1";
+}
     return 0;
 }
