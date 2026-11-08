@@ -12,19 +12,26 @@ int main()
         int n,k;
         cin>>n>>k;
         int flag=0;
+        int arr[n];
         for(int i=0;i<n;i++)
         {
-            int num;
-            cin>>num;
-            if(num==k)
+            cin>>arr[i];           
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]==k)
             {
-                cout<<"YES"<<endl;
                 flag=1;
+                break;
             }
         }
-        if(flag==0)
+        if(flag==1)
         {
-            cout<<"NO"<<endl;
+            cout<<"YES\n";
+        }
+        else
+        {
+            cout<<"NO\n";
         }
     }
     return 0;
